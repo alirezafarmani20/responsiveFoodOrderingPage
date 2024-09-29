@@ -1,7 +1,9 @@
 export default function Header() {
     return (
         <>
-            <div></div>
+            <div className="flex justify-between">
+                <h2>this is header</h2>
+            </div>
         </>
     )
 }

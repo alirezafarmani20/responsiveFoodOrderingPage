@@ -1,9 +1,14 @@
-export default function Container() {
+import React from "react"
+
+//set type for container
+type TContainer = {
+    children: React.ReactNode;
+}
+
+export default function Container({children}: TContainer) {
     return(
         <>
-            <div>
-                <h2></h2>
-            </div>
+            <div className="mx-10">{children}</div>
         </>
     )
 }
