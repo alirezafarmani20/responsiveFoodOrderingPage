@@ -1,14 +1,18 @@
-import React from "react"
+import React from "react";
+import Header from "../header/Header";
 
 //set type for layout
 type TLayout = {
-    children: React.ReactNode;
-}
+  children: React.ReactNode;
+};
 
-export default function Layout({children}: TLayout) {
-    return(
-        <>
-            <div>{children}</div>
-        </>
-    )
+export default function Layout({ children }: TLayout) {
+  return (
+    <>
+      <div>
+        <Header />
+        {children}
+      </div>
+    </>
+  );
 }
